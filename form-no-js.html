@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Brenda's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Brenda's Portfolio Website</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About Me</a>
+            <a href="experience.html">Relevant Experience</a>
+            <a href="projects.html">Technical Projects</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html">Contact Information</a>
+            <a href="experiments.html">HTML Experiments</a>
+            <a href="form-no-js.html" aria-current="page">Contact Form (HTML)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>helloo, let's connect!</h2>
+        <p>
+            I'd love to hear from you and get a chance to connect, 
+            keep in mind that all fields are require and you can use sample 
+            information.
+        </p>
+
+        <form class="contact-form"
+              action="https://httpbin.org/post"
+              method="post">
+            <fieldset>
+                <legend>Input your contact information and message</legend>
+
+                <div class="form-field">
+                    <label for="name">Name (required)</label>
+                    <p id="name-help">enter your name using 1–100 characters.</p>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           autocomplete="name"
+                           required
+                           minlength="1"
+                           maxlength="100"
+                           aria-describedby="name-help">
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email (required)</label>
+                    <p id="email-help">
+                        enter an email address, such as brenda@example.com.
+                    </p>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           autocomplete="email"
+                           required
+                           aria-describedby="email-help">
+                </div>
+
+                <div class="form-field">
+                    <label for="comments">Comments (required)</label>
+                    <p id="comments-help">
+                        Write a message, using 10–1,000 characters.
+                    </p>
+                    <textarea id="comments"
+                              name="comments"
+                              rows="6"
+                              required
+                              minlength="10"
+                              maxlength="1000"
+                              aria-describedby="comments-help"></textarea>
+                </div>
+
+                <input type="hidden" name="possible_bot" value="true">
+
+                <button type="submit">send Message</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting my portfolio! ^_^</p>
+        <a href="contact.html">Contact Information</a>
+    </footer>
+</body>
+</html>
