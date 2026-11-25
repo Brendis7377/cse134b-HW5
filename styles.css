@@ -330,3 +330,18 @@ header > button:hover
     animation: none;
   }
 }
+
+cat-facts {
+    --cat-facts-bg: var(--background-color, #fff0f5);
+    --cat-facts-text: var(--text-color, #333333);
+
+    display: block;
+    padding: 1rem;
+    background-color: var(--cat-facts-bg, #fff0f5);
+    color: var(--cat-facts-text, #333333);
+}
+
+cat-facts.has-pink-border {
+    border: 3px solid #e3337f;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,89 @@
+---
+permalink: about.html
+---
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Me | Brenda's Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brenda's Portfolio Website</h1>
+        <nav>
+            <a href="index.html"> Home Page </a>
+            <a href="about.html"> About Me </a>
+            <a href="experience.html"> Relevant Experience </a>
+            <a href="projects.html"> Technical Projects </a>
+            <a href="interests.html"> Interests </a>
+            <a href="contact.html"> Contact Information </a>
+            <a href="experiments.html">HTML Experiments</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get to a bit about me!!</h2>
+
+        <picture>
+            <source media="(min-width: 700px)"
+                    srcset="images/IMG_4063.jpeg">
+        
+            <img src="images/IMG_4063.jpeg"
+                 alt="Brenda standing outdoors"
+                 width="250">
+        </picture>
+
+        <section>
+            <h3>My Background</h3>
+            <p>
+                Hi! If you want to know a bit more about me, you've definitely 
+                come to the right place!
+            </p>
+
+            <p>
+                I am Latina and a first generation college student, I grew up in Tijuana
+                B.C Mexico then moved here to San Diego when I was 12! I am extremely close 
+                to my mom and dad and I also have an older brother and a pug named Luna!
+            </p>
+        </section>
+
+        <section>
+            <h3>My Education</h3>
+            <p>
+                I study at <span>UCSD (University of California San Diego)</span>, and I am majoring in 
+                Computer Science, I lived on campus the first two years then have been 
+                commuting ever since! I have loved being at this school and i've gotten to 
+                learn so much. Not only through my Computer science courses but through my 
+                electives as well! 
+            </p>
+        </section>
+
+        <section>
+            <h3>What I'm Currently Working On</h3>
+            <p>
+                I'm currently finishing off my last year here at UCSD, and taking all of my 
+                upper divison courses. I am also working part time at General Atomics, which 
+                I intered at over the summer! I am really into design and am currently working 
+                on expanding my skills into more front end work and prototyping! 
+            </p>
+        </section>
+
+        <section>
+            <h3>My Goals for the future</h3>
+            <p>
+                In the future I hope to accomplish a career in computer science, more specifically 
+                as a full stack or front-end developer, I'd also love to work on research and maybe
+                even get my masters in the future! As a personal goal I also really want to get
+                an opportunity to travel more. 
+                <br>
+                One of my biggest dreams is to explore more countries!
+            </p>
+        </section>
+    </main>
+
+    {% include "footer.njk" %}
